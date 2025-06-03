@@ -1,0 +1,81 @@
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
+<body>
+<style>body{background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-family: 'Balsamiq Sans', cursive;
+            animation:none;transition:all .3s ease;}</style>
+
+<div id="konten"><div id="foto"><div class="image"><img id="photo" src="pict.gif" width="200px" height="200px"/></div><span id="sp2"></span></div>
+
+<div id='slider'>
+  <p>HALO SAYANGKUUUU, &nbsp;<b id="kamu"></b> tau gak hari ini hari apaa??‎ </p>
+<p>happy mensive kakaa, my percious bf, my handsome bf, my home, my world, my gorgeous bf, i'm so happy today ^-^</p>
+  <p>here's to many more days of sharing our stories. gak kerasa ternyata udah sejauh ini ya kaa</p>
+<p>kadang aku mikir juga, gimana ya bisa tetap bertahan, padahal banyak hal yang sempet bikin kita goyah dan hampir nyerah</p>
+  <p>tapi aku bersyukur banget, di antara banyaknya rasa sakit, kakaa tetap jadi orang yang aku pilih untuk sama sama lanjut sembuhin sakit itu. </p>
+  <p>walaupun awalnya mungkin kita ngga nyangka bakal ada di hubungan ini, tapi aku ngga nyesel bisa sampe di posisi skrg to be your boyfriend</p>
+    <p>karena setelah jalanin hubungan sama kaka, hidup aku rasanya jadi lebih berwarna dan lebih bahagia. gimana ga? orang setiap hari aku harus nahan salting karna ulah kakaaa!</p>
+  <p>makasih udah nerima dede yang kadang pemikirannya masih kekanakan, suka ngerepotin kamu, dan suka caper sama kamu hehe</p> 
+  <p> maaf karna kakaa harus hadapin mood aku yang suka ga jelas kaya rollercoaster,  kadang aku suka marah marah gajelas, suka ngambek, suka ovt berlebihan, suka bikin kakaa pusing.</p>
+ <p>maaf banget kalo tbtb gajelas dan kaya org ngambek pdhl aslinya aku mau isengin kakaa hehehe maaf yaaa sayangkuuu :3</p>
+  <p>aku tauu ko sometimes i always make you madd to me but kakaa gabakalan pernah bisa marah kan sama aku? YEA⭐️⭐️⭐️⭐️⭐️/⭐️⭐️⭐️⭐️⭐️ five out five stars for my boyfriend!!!</p>
+  <p>aku tau ko terkadang kakaa sibuk sama dunia kakaa tapi makasih karna udah selalu mau luangin waktu buat akuu</p>
+<p>aku mau kita bisa terus jadi tempat pulang satu sama lain, tiap kali ada banyak hari hari yang berat.</p>
+  <p>aku tau kita ga sempurna, kadang ada kalanya kita sama sama keras kepala tapi aku harap kita bisa nurunin ego kita kalau lagi berantem dan bisa lebih saling ngertiin satu sama lain</p>
+  <p>kaka kalo lg ngerasa bosen sama aku ayo kita mulai semua nya dari awal lagi? ayo jatuh cinta lagi lagi dan lagi sampe mampus sm dede yg cantik ini hehehe</p>
+            <p>kaka aku punya tebak tebakan, kuping kuping apa yang bisa bikin bahagia?</p>
+<p>jawabannya itu <b>"kuping in bersama kakaa selamanya"</b> aww gemes ya i loaff you </p>
+            <p>Let’s keep growing together, let’s be better, and let’s never forget how lucky we are to have each other.</p>
+            <p> I love you, always always always 💗 </p>
+  <p>Pencet love ini yaa<label class='lovein' onClick="duar()">&#128158;</label></p>
+</div><div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+</div>
+<div id="bodyblur"></div>
+
+<script>  
+var a=0,finish;
+finish = "happy mensive kakaa, aku harap semoga kita bisa terus bersama yaa, dedee selalu sayangg sama kakaa. I love you more than you know, kakaa 🤍🤍🤍";
+
+function play() {
+  var audio = new Audio('lucky.mp3');
+  audio.play();
+}
+            
+ function bukaWa(){window.location = "https://t.me/lowkeky"}
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'masukin nama kaka',
+                    input: 'text',
+                    confirmButtonText: 'next',
+                    showCancelButton: false,
+                });                           
+                if(nama){
+                	window.nama = nama;
+                    document.getElementById("kamu").innerHTML = "" + window.nama;
+                    setTimeout(showDiv, 700);play();                      
+                } else {
+                    await swals.fire('Heh! Jangan dikosongin atuh buru isi 😡');
+                    mulai();
+                }
+            }
+            mulai();
+</script>
+</body>
+</html>
